@@ -35,7 +35,7 @@ No Hochele’s, cada cliente é tratado de forma única — porque cada beleza �
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fmerianigarcia.github.io%2FSal-o-Hochele-s%2F)
 
 ## Acessar o Site 
-! [](./Img/qrcode_merianigarcia.github.io.png)
+![](./Img/qrcode_merianigarcia.github.io.png)
 
 
 
