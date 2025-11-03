@@ -1,0 +1,185 @@
+/* Layout */
+
+/* Variáveis */
+:root {
+    --azulclaro: #c7e7e2;
+    --rosa: #ffc7c6;
+    --preto: #0c0b0b;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+
+}
+
+/* Fim Layout  */
+
+
+/* Smarthphone Portrait */
+header {
+    height: 65px;
+    background-color: var(--rosa);
+}
+
+#logo img {
+    width: 160px;
+    height: 160px;
+    margin-top: 65px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    color: rgb(255, 152, 150);
+    font-size: 3rem;
+    position: fixed;
+    right: 20px;
+}
+
+nav ul {
+    height: 100vh;
+    background-color: rgba(250, 152, 170);
+    position: fixed;
+    top: 65px;
+    right: -65%;
+    width: 65%;
+    transition: all 0.5s;
+}
+
+/* Ação para a caixa Checkbox */
+/* Quando selecionado mudar propriedades ul */
+#check:checked~ul {
+    right: 0px;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px;
+    text-align: right;
+    text-align: center;
+    border-bottom: 1px solid var(--rosa);
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--rosa);
+}
+
+/* Fim - Smarthphone Portrait */
+
+
+
+/* Smartphone Landscape */
+@media(min-width: 576px) {
+
+    /* Layout */
+    .container {
+        max-width: 540px;
+    }
+
+    /* Cabeçalho */
+    nav ul {
+        width: 40%;
+        right: -40%;
+    }
+}
+
+/* Fim Smartphone Landscape */
+
+/* Tablete portrait */
+@media(min-width: 768px) {
+
+    /* Layout */
+    .container {
+        max-width: 720px;
+
+    }
+}
+
+
+/*  Fim tablet portrait */
+
+
+/* Tablet Landscape */
+@media (min-width:768px) {
+
+    /* Layout */
+    .container {
+        max-width: 720px;
+    }
+}
+
+/*  Fim tablet Landscape */
+
+
+/* notebook / pc */
+@media (min-width:1200px) {
+
+    /* Layout */
+    .container {
+        max-width: 1140px;
+        justify-content: space-between;
+    }
+}
+
+/* Cabeçalho */
+header {
+    height: 100px;
+}
+
+#logo img {
+    width: 194px;
+    height: 194px;
+}
+
+label {
+    display: none;
+}
+
+nav ul {
+    position: static;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+nav ul li {
+    border: 0;
+    float: left;
+}
+
+nav ul li a:hover {
+    color: var(--azulclaro--);
+}
+
+
+
+/*  Fim notebook/pc */
+
+
+/* Full HD /4K */
+@media (min-width:1400px) {
+
+    /* Layout */
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/*  Fim Full HD /4K */

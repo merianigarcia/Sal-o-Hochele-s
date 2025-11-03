@@ -32,4 +32,10 @@ Além de um negócio, este projeto também representa o meu aprendizado em **tec
 
 No Hochele’s, cada cliente é tratado de forma única — porque cada beleza é singular 💖  
 
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fmerianigarcia.github.io%2FSal-o-Hochele-s%2F)
+
+## Acessar o Site 
+! [](./Img/qrcode_merianigarcia.github.io.png)
+
+
 
