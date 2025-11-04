@@ -29,6 +29,18 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+    text-decoration: none;
+    font-size: 1, 3rem;
+    font-weight: 700;
+    background-color: var(--preto);
+    padding: 10px 40px;
+    color: var(--dourado);
+    border-radius: 25px;
+    border: 2px solid var(--cinzaClaro);
+
+}
+
 /* Fim - Layout <<<<<<<<<<<<<<<<<<<< */
 
 
@@ -95,7 +107,7 @@ main {
 
 }
 
-main.conteiner {
+main .container {
     height: 100%;
     flex-direction: column;
     align-items: center;
@@ -107,7 +119,7 @@ main.conteiner {
 main h1 {
     color: var(--preto);
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -115,7 +127,8 @@ Main h2 {
     color: var(--azulMedio);
     font-size: 1.85rem;
     font-weight: 900;
-    text-shadow: text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 /* Fim - Smartphone Portrait <<<<<<< */
@@ -127,6 +140,20 @@ Main h2 {
     /* Layout */
     .container {
         max-width: 540px;
+    }
+
+    /*  principal  */
+    main {
+        height: 75vh;
+    }
+
+    main h1 {
+        font-size: 1.75rem;
+    }
+
+    main h2 {
+        font-size: 2.rem;
+
     }
 
     /* Cabeçalho */
@@ -146,6 +173,14 @@ Main h2 {
     .container {
         max-width: 720px;
     }
+}
+
+main h1 {
+    font-size: 2.75rem;
+}
+
+main h2 {
+    font-size: 1.rem;
 }
 
 /* Fim - Tablet Portrait <<<<<<<<<<< */
@@ -204,6 +239,11 @@ Main h2 {
     }
 }
 
+/* Principal */
+main {
+    height: 85vh;
+}
+
 /* Fim - Notebook / PC <<<<<<<<<<<< */
 
 
@@ -214,6 +254,15 @@ Main h2 {
     .container {
         max-width: 1320px;
     }
+}
+
+/* Principal */
+main h1 {
+    font-size: 6rem;
+}
+
+main h2 {
+    font-size: 4rem;
 }
 
 /* Fim - Full HD / 4K <<<<<<<<<<<< */
