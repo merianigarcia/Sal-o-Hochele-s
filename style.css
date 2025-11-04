@@ -117,14 +117,14 @@ main .container {
 
 
 main h1 {
-    color: var(--preto);
+    color: var(--dourado);
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 
 Main h2 {
-    color: var(--azulMedio);
+    color: var(--rosa);
     font-size: 1.85rem;
     font-weight: 900;
     text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
