@@ -181,6 +181,7 @@ main h1 {
 
 main h2 {
     font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 /* Fim - Tablet Portrait <<<<<<<<<<< */
@@ -263,7 +264,7 @@ main {
 
     main h2 {
         font-size: 4rem;
-    }
+        }
 }
 
 /* Fim - Full HD / 4K <<<<<<<<<<<< */
