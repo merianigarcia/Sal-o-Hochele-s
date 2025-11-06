@@ -131,6 +131,47 @@ main h2 {
 
 }
 
+/* DESTAQUE */
+#destaque {
+    padding: 50px 5px;
+    background: url(./Img/backgroud.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaque .container {
+    flex-direction: column;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+
+}
+
+#hero-text h2 {
+    margin-bottom: 15px;
+}
+
+.topics {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+.topics p {
+    margin-left: 15px;
+
+}
+
+
+
 /* Fim - Smartphone Portrait <<<<<<< */
 
 
@@ -156,12 +197,40 @@ main h2 {
 
     }
 
+    /* DESTAQUE */
+    #destaque {
+        padding: 50px 0px;
+    }
+
+    #destaque .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hero {
+        text-align: left;
+    }
+
+    #hero img {
+        width: 200px;
+        height: 200px;
+        margin: 0px 50px 0px 0px;
+    }
+
+    .topics {
+        display: none;
+    }
+
+
+
+
     /* Cabeçalho */
     nav ul {
         width: 40%;
         right: -40%;
     }
 }
+
 
 /* Fim - Smartphone Landscape <<<<<< */
 
@@ -246,6 +315,24 @@ main {
     text-align: center;
 }
 
+/* DESTAQUE */
+#destaque {
+    background-attachment: fixed;  /* para deixar a tela fixa */
+}
+
+/* DESTAQUE */
+#hero img {
+    width: 400px;
+    height: 400px;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 /* Fim - Notebook / PC <<<<<<<<<<<< */
 
 
@@ -265,7 +352,7 @@ main {
 
     main h2 {
         font-size: 4rem;
-        }
+    }
 }
 
 /* Fim - Full HD / 4K <<<<<<<<<<<< */
