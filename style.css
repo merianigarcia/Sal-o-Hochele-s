@@ -134,7 +134,7 @@ main h2 {
 /* DESTAQUE */
 #destaque {
     padding: 50px 5px;
-    background: url(./Img/backgroud.png);
+    background: url(./Img/backgroud2.png);
     background-size: cover;
     background-position: center;
 }
@@ -156,6 +156,15 @@ main h2 {
 
 #hero-text h2 {
     margin-bottom: 15px;
+    text-align: center;
+    font-weight: 900;
+    color: ;
+}
+
+#hero-text p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 800;
 }
 
 .topics {
@@ -165,10 +174,52 @@ main h2 {
 
 }
 
+#destaque #hero img {
+    height: 200px;
+    width: 200px;
+}
+
 .topics p {
     margin-left: 15px;
-
 }
+
+/* salao */
+
+#salao {
+    padding: 50px 50px;
+}
+
+#textoSalao h2 {
+    margin-bottom: 15px;
+    color: var(--dourado);
+    text-align: center;
+    font-weight: 900;
+}
+
+#textoSalao p {
+    margin-bottom: 15px;
+    color: var(--preto);
+    text-align: center;
+}
+
+#salao .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+}
+
+
+
 
 
 
@@ -317,7 +368,8 @@ main {
 
 /* DESTAQUE */
 #destaque {
-    background-attachment: fixed;  /* para deixar a tela fixa */
+    background-attachment: fixed;
+    /* para deixar a tela fixa */
 }
 
 /* DESTAQUE */
@@ -331,6 +383,12 @@ main {
     flex-direction: column;
 }
 
+
+/* YOUTUBE */
+#salao .container {
+    display: flex;
+    
+}
 
 
 /* Fim - Notebook / PC <<<<<<<<<<<< */
