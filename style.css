@@ -89,7 +89,7 @@ nav ul li {
     list-style: none;
     padding: 20px;
     text-align: right;
-    border-bottom: 1px solid var(--cinzaEscuro);
+
 }
 
 nav ul li a {
@@ -112,6 +112,7 @@ main .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 
 }
 
@@ -218,10 +219,52 @@ main h2 {
     height: 191px;
 }
 
+/* Wireframe */
+#wireframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 40px;
+    padding-right: 20px;
+    background: url(./Img/backgroud2.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#textowire {
+    color: #111111;
+    padding: 0px 10px;
+}
+
+#textowire h2 {
+    margin-bottom: 10px;
+}
+
+#textowire p {
+    margin-bottom: 40px;
+}
+
+#textowire span {
+    display: none;
+}
+
+.Botao {
+    display: inline-block;
+    background-color: var(--preto);
+    color: var(--dourado);
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 2px solid var(--cinzaClaro);
 
 
+}
 
-
+#qrcode img {
+    display: none;
+}
 
 /* Fim - Smartphone Portrait <<<<<<< */
 
@@ -272,15 +315,14 @@ main h2 {
         display: none;
     }
 
-
-
-
     /* Cabeçalho */
     nav ul {
         width: 40%;
         right: -40%;
     }
+    
 }
+
 
 
 /* Fim - Smartphone Landscape <<<<<< */
@@ -314,6 +356,9 @@ main h2 {
     .container {
         max-width: 960px;
     }
+}
+.container {
+    flex-direction: column;
 }
 
 /* Fim - Tablet Landscape <<<<<<<<<< */
@@ -387,8 +432,10 @@ main {
 /* YOUTUBE */
 #salao .container {
     display: flex;
-    
+
 }
+
+
 
 
 /* Fim - Notebook / PC <<<<<<<<<<<< */
