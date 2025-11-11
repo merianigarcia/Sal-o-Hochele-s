@@ -38,8 +38,33 @@ body {
     color: var(--dourado);
     border-radius: 25px;
     border: 2px solid var(--cinzaClaro);
-
 }
+
+/* CARTAO */    
+.card {
+    width: 341px;
+    height: 450px;
+    margin-bottom: 25px;
+    border: 2px solid var(--dourado);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.carde h2 {
+    font-size: 1.3rem;
+    margin: 15px 0px;
+}
+
+.card p {
+    color: var(--dourado);
+    text-align: left;
+    padding: 0px 15px 30px 15px;
+}
+
 
 /* Fim - Layout <<<<<<<<<<<<<<<<<<<< */
 
@@ -71,7 +96,7 @@ label {
 
 nav ul {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(19, 19, 19, 0.9);
     position: fixed;
     top: 60px;
     right: -65%;
@@ -94,7 +119,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--dourado);
+    color: var(--cinzaClaro);
 }
 
 
@@ -112,8 +137,6 @@ main .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
 }
 
 
@@ -159,7 +182,7 @@ main h2 {
     margin-bottom: 15px;
     text-align: center;
     font-weight: 900;
-    color: ;
+   
 }
 
 #hero-text p {
@@ -172,7 +195,6 @@ main h2 {
     display: flex;
     align-items: center;
     margin-top: 15px;
-
 }
 
 #destaque #hero img {
@@ -184,20 +206,21 @@ main h2 {
     margin-left: 15px;
 }
 
-/* salao */
+/* Salao */
 
-#salao {
-    padding: 50px 50px;
+#salao1 {
+    padding: 50px 0px;
+    background: url(./Img/backgroud.png);
+    background-size: cover;
+    background-position: center;
 }
+ #textosalao {
+    color: #241587;
+    padding: 0px 10px;  
+    
+ }
 
-#textoSalao h2 {
-    margin-bottom: 15px;
-    color: var(--dourado);
-    text-align: center;
-    font-weight: 900;
-}
-
-#textoSalao p {
+#textosalao p {
     margin-bottom: 15px;
     color: var(--preto);
     text-align: center;
@@ -205,50 +228,38 @@ main h2 {
 
 #salao .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 #video {
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
 #video iframe {
-    width: 340px;
-    height: 191px;
+    width: 200px;
+    height: 200px;
 }
 
-/* Wireframe */
-#wireframe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 0px 40px;
-    padding-right: 20px;
-    background: url(./Img/backgroud2.png);
-    background-position: center;
-    background-size: cover;
-
-}
-
-#textowire {
-    color: #111111;
-    padding: 0px 10px;
-}
-
-#textowire h2 {
+#textosalao h2 {
     margin-bottom: 10px;
 }
 
-#textowire p {
-    margin-bottom: 40px;
+#textosalao p {
+    margin-bottom: 5px;
+    line-height: 25px;
 }
 
-#textowire span {
+#textosalao span {
     display: none;
 }
+
+#qrcode {
+    display: none;
+}
+
 
 .Botao {
     display: inline-block;
@@ -258,15 +269,33 @@ main h2 {
     border-radius: 30px;
     text-decoration: none;
     border: 2px solid var(--cinzaClaro);
-
-
 }
 
-#qrcode img {
-    display: none;
+/* Cartão */
+
+#Salao3 {
+    padding: 50px 0px 25px 0px;
 }
+
+#Salao3 .container {
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* Fim - Smartphone Portrait <<<<<<< */
+
+/*  CARTOES  */
+    #salao3 {
+        background-color: var(--rosa);
+        padding: 50px 0px 25px 0px;
+    }
+ 
+    #salao3 .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
 
 
 /* Smartphone Landscape >>>>>>>>>>>> */
@@ -337,6 +366,7 @@ main h2 {
     }
 }
 
+
 main h1 {
     font-size: 2.75rem;
 }
@@ -361,6 +391,18 @@ main h2 {
     flex-direction: column;
 }
 
+/* CARTOES */
+#Salao3 .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-right: 25px;
+}
+
+
+
 /* Fim - Tablet Landscape <<<<<<<<<< */
 
 
@@ -369,13 +411,14 @@ main h2 {
 
     /* Layout */
     .container {
+      
         max-width: 1140px;
-        justify-content: space-between;
+        justify-content: space-between; 
     }
 
     /* Cabeçalho */
     header {
-        height: 100px;
+        height: 40px;
     }
 
     #logo img {
@@ -388,7 +431,7 @@ main h2 {
     }
 
     nav ul {
-        position: static;
+       position: static;
         width: 100%;
         height: auto;
         background-color: transparent;
@@ -396,16 +439,15 @@ main h2 {
     }
 
     nav ul li {
-        border: 0;
+       border: 0;
         float: left;
     }
 
     nav ul li a:hover {
         color: var(--dourado);
     }
-}
 
-/* Principal */
+    /* Principal */
 main {
     height: 85vh;
     text-align: center;
@@ -428,14 +470,42 @@ main {
     flex-direction: column;
 }
 
+/*  Salao  */
 
-/* YOUTUBE */
-#salao .container {
-    display: flex;
+#qrcode {
+    display: inline;
+    display: flex; 
+}
+
+#qrcode img {
+   width: 130px;
+   height: 130px; 
 
 }
 
+#textosalao {
+    margin: 10px;
+}
 
+#salao .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Cartões */
+
+#Salao3 .container {
+    flex-direction: row;
+}
+
+}
 
 
 /* Fim - Notebook / PC <<<<<<<<<<<< */
@@ -461,3 +531,4 @@ main {
 }
 
 /* Fim - Full HD / 4K <<<<<<<<<<<< */
+
