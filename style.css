@@ -40,7 +40,7 @@ body {
     border: 2px solid var(--cinzaClaro);
 }
 
-/* CARTAO */    
+/* CARTAO */
 .card {
     width: 341px;
     height: 450px;
@@ -65,6 +65,24 @@ body {
     padding: 0px 15px 30px 15px;
 }
 
+
+/* topo do site */
+
+#topo {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+}
+
+/* scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+.flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 /* Fim - Layout <<<<<<<<<<<<<<<<<<<< */
 
@@ -182,7 +200,7 @@ main h2 {
     margin-bottom: 15px;
     text-align: center;
     font-weight: 900;
-   
+
 }
 
 #hero-text p {
@@ -214,11 +232,12 @@ main h2 {
     background-size: cover;
     background-position: center;
 }
- #textosalao {
+
+#textosalao {
     color: #241587;
-    padding: 0px 10px;  
-    
- }
+    padding: 0px 10px;
+
+}
 
 #textosalao p {
     margin-bottom: 15px;
@@ -282,19 +301,43 @@ main h2 {
     align-items: center;
 }
 
+/* Rodapé */
+
+address {
+    padding: 10px 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--rosa);
+}
+
+address img {
+    padding-top: 15px;
+}
+
+#endereço {
+    padding: 10px;
+}
+
+footer {
+    padding: 15px 0px;
+    text-align: center;
+
+}
+
+
 
 /* Fim - Smartphone Portrait <<<<<<< */
 
 /*  CARTOES  */
-    #salao3 {
-        background-color: var(--rosa);
-        padding: 50px 0px 25px 0px;
-    }
- 
-    #salao3 .container {
-        flex-direction: column;
-        align-items: center;
-    }
+#salao3 {
+    background-color: var(--rosa);
+    padding: 50px 0px 25px 0px;
+}
+
+#salao3 .container {
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
@@ -349,7 +392,14 @@ main h2 {
         width: 40%;
         right: -40%;
     }
-    
+
+    .flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+
 }
 
 
@@ -364,8 +414,6 @@ main h2 {
     .container {
         max-width: 720px;
     }
-}
-
 
 main h1 {
     font-size: 2.75rem;
@@ -374,6 +422,8 @@ main h1 {
 main h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+}
+
 }
 
 /* Fim - Tablet Portrait <<<<<<<<<<< */
@@ -386,22 +436,22 @@ main h2 {
     .container {
         max-width: 960px;
     }
-}
-.container {
-    flex-direction: column;
-}
 
-/* CARTOES */
-#Salao3 .container {
-    flex-direction: row;
-    flex-wrap: wrap;
+    .container {
+        flex-direction: column;
+    }
+
+    /* CARTOES */
+    #Salao3 .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-right: 25px;
+    }
+
 }
-
-.card {
-    margin-right: 25px;
-}
-
-
 
 /* Fim - Tablet Landscape <<<<<<<<<< */
 
@@ -411,9 +461,9 @@ main h2 {
 
     /* Layout */
     .container {
-      
+
         max-width: 1140px;
-        justify-content: space-between; 
+        justify-content: space-between;
     }
 
     /* Cabeçalho */
@@ -431,7 +481,7 @@ main h2 {
     }
 
     nav ul {
-       position: static;
+        position: static;
         width: 100%;
         height: auto;
         background-color: transparent;
@@ -439,7 +489,7 @@ main h2 {
     }
 
     nav ul li {
-       border: 0;
+        border: 0;
         float: left;
     }
 
@@ -448,62 +498,62 @@ main h2 {
     }
 
     /* Principal */
-main {
-    height: 85vh;
-    text-align: center;
-}
+    main {
+        height: 85vh;
+        text-align: center;
+    }
 
-/* DESTAQUE */
-#destaque {
-    background-attachment: fixed;
-    /* para deixar a tela fixa */
-}
+    /* DESTAQUE */
+    #destaque {
+        background-attachment: fixed;
+        /* para deixar a tela fixa */
+    }
 
-/* DESTAQUE */
-#hero img {
-    width: 400px;
-    height: 400px;
-}
+    /* DESTAQUE */
+    #hero img {
+        width: 400px;
+        height: 400px;
+    }
 
-.topics {
-    display: flex;
-    flex-direction: column;
-}
+    .topics {
+        display: flex;
+        flex-direction: column;
+    }
 
-/*  Salao  */
+    /*  Salao  */
 
-#qrcode {
-    display: inline;
-    display: flex; 
-}
+    #qrcode {
+        display: inline;
+        display: flex;
+    }
 
-#qrcode img {
-   width: 130px;
-   height: 130px; 
+    #qrcode img {
+        width: 130px;
+        height: 130px;
 
-}
+    }
 
-#textosalao {
-    margin: 10px;
-}
+    #textosalao {
+        margin: 10px;
+    }
 
-#salao .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
+    #salao .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
-.container {
-    display: flex;
-    flex-direction: row;
-}
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
 
-/* Cartões */
+    /* Cartões */
 
-#Salao3 .container {
-    flex-direction: row;
-}
+    #Salao3 .container {
+        flex-direction: row;
+    }
 
 }
 
@@ -531,4 +581,3 @@ main {
 }
 
 /* Fim - Full HD / 4K <<<<<<<<<<<< */
-
