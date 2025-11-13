@@ -229,7 +229,7 @@ main h2 {
 
 /* Salao */
 
-#salao1 {
+#salao1  {
     padding: 50px 0px;
     background: url(./Img/backgroud.png);
     background-size: cover;
@@ -270,6 +270,7 @@ main h2 {
 #textosalao h2 {
     margin-bottom: 10px;
     display: inline-block;
+    margin-top: 10px;
 
 }
 
