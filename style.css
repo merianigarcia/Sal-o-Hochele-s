@@ -137,7 +137,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--preto);
+    color: var(--rosa);
     font-size: 1.3rem;
 }
 
@@ -262,7 +262,7 @@ main h2 {
 }
 
 #video iframe {
-    width: 200px;
+    width: 300px;
     height: 200px;
 
 }
@@ -442,6 +442,12 @@ footer {
         align-items: center;
     }
 
+    #video iframe {
+    width: 500px;
+    height: 300px;
+
+}
+
 }
 
 
@@ -510,7 +516,7 @@ footer {
 
     /* Cabeçalho */
     header {
-        height: 40px;
+        height: 90px;
     }
 
     #logo img {
