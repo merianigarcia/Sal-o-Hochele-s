@@ -1,5 +1,4 @@
 ![GitHub License](https://img.shields.io/github/license/merianigarcia/Sal-o-Hochele-s)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fmerianigarcia.github.io%2Sal-o-Hochele-s%2F)
 
 
 <p>
