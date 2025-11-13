@@ -105,7 +105,7 @@ header {
 }
 
 label {
-    color: rgba(156, 220, 254, 0.75);
+    color: rgba(156, 254, 200, 0.75);
     font-size: 3rem;
     position: fixed;
     right: 15px;
@@ -137,7 +137,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--cinzaClaro);
+    color: var(--preto);
+    font-size: 1.3rem;
 }
 
 
@@ -159,17 +160,19 @@ main .container {
 
 
 h1 {
-    font-size: 0.5rem;
-    color: var(--dourado);
+    font-size: 2.0rem;
+    color: var(--preto);
     font-family: "Opens Sans", sans-serif;
     text-shadow: 0px 5px 10px var(--cinzaClaro), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 
 main h2 {
     color: var(--rosa);
-    font-size: 0.6rem;
+    font-size: 1.3rem;
     text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 
 }
 
@@ -247,6 +250,7 @@ main h2 {
 
 #salao .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
 }
@@ -260,14 +264,17 @@ main h2 {
 #video iframe {
     width: 200px;
     height: 200px;
+
 }
 
 #textosalao h2 {
     margin-bottom: 10px;
+    display: inline-block;
+
 }
 
 #textosalao p {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     line-height: 25px;
 }
 
@@ -301,6 +308,14 @@ main h2 {
     align-items: center;
 }
 
+#Contato {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin: 0px;
+}
+
+
 /* Rodapé */
 
 address {
@@ -308,6 +323,7 @@ address {
     background-size: cover;
     background-position: center;
     background-color: var(--rosa);
+    padding: 10px;
 }
 
 address img {
@@ -323,6 +339,22 @@ footer {
     text-align: center;
 
 }
+
+#googlemaps iframe {
+    height: 100px;
+    width: 100px;
+}
+
+#googlemaps iframe {
+    display: none;
+}
+
+/* Rodapé */ 
+
+    footer .container {
+        justify-content: space-around;
+        align-items: center;
+    }
 
 
 
@@ -351,7 +383,8 @@ footer {
 
     /*  principal  */
     main {
-        height: 5vh;
+        height: 300px;
+
     }
 
     main h1 {
@@ -393,12 +426,20 @@ footer {
         right: -40%;
     }
 
-    .flex5 {
-        flex-direction: row;
-        justify-content: space-between;
 
+    /* Contatos */
+
+    address .container {
+        justify-content: space-around;
+        align-items: center;
     }
 
+    /* Rodapé */ 
+
+    footer .container {
+        justify-content: space-around;
+        align-items: center;
+    }
 
 }
 
@@ -415,14 +456,14 @@ footer {
         max-width: 720px;
     }
 
-main h1 {
-    font-size: 2.75rem;
-}
+    main h1 {
+        font-size: 2.75rem;
+    }
 
-main h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
+    main h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -553,6 +594,16 @@ main h2 {
 
     #Salao3 .container {
         flex-direction: row;
+    }
+
+    /* Contatos */
+    
+
+
+    #googlemaps iframe {
+        display: flex;
+        width: 400px;
+        height: 300px;
     }
 
 }
