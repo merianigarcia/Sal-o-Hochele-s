@@ -179,7 +179,7 @@ main h2 {
 /* DESTAQUE */
 #destaque {
     padding: 50px 5px;
-    background: url(./Img/fundorosa2.jpg);
+    background: url(./Img/FUNDOPISCINA.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -378,7 +378,7 @@ footer .container {
 }
 
 #Contato a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 
@@ -426,11 +426,6 @@ footer .container {
         padding: 50px 0px;
     }
 
-    #destaque .container {
-        flex-direction: row;
-        align-items: center;
-    }
-    
 
     #hero {
         text-align: left;
@@ -589,10 +584,13 @@ footer .container {
 
 
     .topics {
-        display: flex;
+      
+       display: flex;
         flex-direction: column;
     }
 
+
+    
     /*  Salao  */
 
     #qrcode {
@@ -604,10 +602,6 @@ footer .container {
         width: 300px;
         height: 300px;
 
-    }
-
-    #textosalao {
-        margin: 10px;
     }
 
     #salao .container {
@@ -635,6 +629,8 @@ footer .container {
         width: 400px;
         height: 300px;
     }
+
+
 
 }
 
