@@ -179,7 +179,7 @@ main h2 {
 /* DESTAQUE */
 #destaque {
     padding: 50px 5px;
-    background: url(./Img/salon-5803542_640.png);
+    background: url(./Img/fundorosa2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -327,6 +327,11 @@ main h2 {
 
 #textosalao1 {
     margin-top: 20px;
+}
+
+
+#textosalao1 h2 {
+    margin-bottom: 20px;
 }
 
 
