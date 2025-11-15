@@ -428,13 +428,13 @@ footer .container {
 
 
     #hero {
-        text-align: left;
+       /*  text-align: left; */
     }
 
     #hero img {
         width: 200px;
         height: 200px;
-        margin: 0px 50px 0px 0px;
+        margin: 0px 0px 20px 0px;
     }
 
     .topics {
@@ -576,6 +576,10 @@ footer .container {
         /* para deixar a tela fixa */
     }
 
+    #destaque .container {
+        flex-direction: row;
+    }
+
     /* DESTAQUE */
     #hero img {
         width: 400px;
@@ -586,7 +590,11 @@ footer .container {
     .topics {
       
        display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    #hero {
+        margin-right: 50px;
     }
 
 
